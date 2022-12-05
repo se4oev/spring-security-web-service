@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Форма аутентификации | Nlab </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+</head>
+
+<body>
+    <form method="POST" th:action="@{/login}" id="loginForm">
+        <div class="input-field">
+            <input type="text" name="username" id="username" required spellcheck="false">
+            <label>Логин</label>
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" id="password" required>
+            <label>Пароль</label>
+        </div>
+        <div class="login-button">
+            <input type="submit" value="Войти">
+        </div>
+    </form>
+</body>
+
+</html>
